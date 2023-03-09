@@ -33,6 +33,7 @@ export default function App() {
           justifyContent: 'center',
           paddingTop: '50px',
           fontWeight:'bold',
+          fontSize: '30px'
           /* color: '#80818C' */
          /*  '@xsMax': {
             fontSize: '22px'
@@ -65,13 +66,14 @@ export default function App() {
           alignItems: 'center',
           justifyContent: 'center',
           /* color:'#80818C', */
-          fontWeight:'bold'
+          fontWeight:'bold',
+          fontSize: '30px'
          /*  '@xsMax': {
             fontSize: '22px'
           } */
         }}
       >
-        Sou um desenvolvedor frontend
+        Sou desenvolvedor frontend
       </h2>
       
       <Grid className="grid" css={{
