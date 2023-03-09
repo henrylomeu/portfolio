@@ -1,0 +1,82 @@
+/* body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #ff008c 0%, rgb(211, 9, 225) 100%);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+
+
+
+
+
+
+
+
+
+
+/* import styled from "styled-components";
+
+export const Container = styled.div`
+    color: white;
+    margin-top: 150px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    align-items: center;
+    
+}
+`
+export const StyledH1 = styled.h1`
+    font-size: 40px;
+    color: #028DB5;
+    text-align: center;
+    margin-top: 100px;
+
+`;
+
+export const Image = styled.img`
+    width: 250px;
+    height: 250px;
+    display: flex;
+    margin-right: 10px;
+    border-radius: 30px;
+    border: 5px solid;
+ 
+    }
+
+`;
+
+export const Icons = styled.div`
+    display: inline-block;
+
+    p{
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        height: 70px;
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+
+    }
+
+`
+
+export const Description = styled.div`
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 30px;
+    width: 970px;
+    clear: both;
+    margin-top: 0;
+    font-size: 20px;
+` */

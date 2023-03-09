@@ -1,0 +1,77 @@
+.mySwiper {
+  --swiper-navigation-color: #F5A524;
+  --swiper-pagination-color: #F5A524;
+  margin-right: 100px;
+}
+
+.image {
+
+  height: 400px;
+}
+
+.image:hover {
+
+  height: 400px;
+}
+
+.image__img {
+  object-fit: cover;
+}
+
+.image__overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1; 
+  width: 500px;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image:hover .image__overlay {
+  opacity: 1;
+}
+
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.2em;
+}
+
+.card-clicked {
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slider-nav {
+  max-width: 500px;
+  margin: 0 auto;
+}
+

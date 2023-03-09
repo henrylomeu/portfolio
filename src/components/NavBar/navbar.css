@@ -1,50 +1,5 @@
-NextUIProvider{
-  overflow-x: hidden;
-  height: 100%;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-.App {
-
-}
-.white-text {
-  color: white;
-}
-.topo{
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F5A524;
-	color: white;
-}
-
-@media (max-width: 390px) {
-    .App{
-        overflow-x: hidden;
-        width: 50%;
-    }   
-}
-
-.box{
-  marginTop:'10px'
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-.theme-toggle-btn{
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
+
 .selected {
     border-bottom: 2px solid #F5A524; 
   }
@@ -60,7 +15,7 @@ NextUIProvider{
 nav {
 	height: 80px;
 	padding: 0 2rem;
-	background-color: #80818C;
+	background-color: #F5A524;
 	z-index: 5000;
 	position: fixed;
 	top: 0;
@@ -141,7 +96,7 @@ nav {
 		z-index: 5000;
 		border-bottom: 1px solid ;
 		width: 100vw;
-		background-color: #80818C;
+		background-color: #F5A524;
 		justify-content: space-between; 
 }
 
@@ -176,6 +131,3 @@ nav {
 	
 	}
 }
-
-
-

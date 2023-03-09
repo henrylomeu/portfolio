@@ -1,0 +1,26 @@
+
+@media (max-width: 390px) {
+    .text1{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .text{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 22px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .grid{
+        display: flex;
+
+    }
+}
