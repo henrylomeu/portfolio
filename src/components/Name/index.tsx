@@ -7,31 +7,37 @@ import './index.css'
 import { motion } from "framer-motion";
 
 export default function App() {
-  
+  const easing = [0.6, -0.05, 0.01, 0.99];
+  const fadeInUp = {
+    initial: {
+      y: 60,
+      opacity: 0
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: easing
+      }
+    }
+  };
   return (
-    <motion.div
-      className="box"
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 1.5,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01]
-      }}
-    >
+   
+    <motion.div className="name" initial="initial" animate="animate" exit={{ opacity: 0 }}>
     <Container 
       css={{ 
         '@xsMax': {
 
     }}}>
       
-      <h2
+      <motion.h2
+      variants={fadeInUp}
         className="text"
         style={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          paddingTop: '50px',
           fontWeight:'bold',
           fontSize: '30px'
           /* color: '#80818C' */
@@ -41,25 +47,34 @@ export default function App() {
         }}
       >
         Olá, me chamo
-      </h2>
-      <Text
+      </motion.h2>
+      <motion.h1
+      variants={{
+        ...fadeInUp,
+        animate: {
+          ...fadeInUp.animate,
+          transition: { ...fadeInUp.animate.transition, delay: 0.5 }
+        }
+      }}
       className="text1"
-        h1
-        size={60}
-        css={{
+      style={{
           color:'#F5A524',
           alignItems: 'center',
           justifyContent: 'center',
           display: 'flex',
-          '@xsMax': {
-            fontSize: '50px'
-          }
+          fontWeight:'bold'
         }}
-        weight="bold"
       >
         Henry
-      </Text>
-      <h2
+      </motion.h1>
+      <motion.h2
+      variants={{
+        ...fadeInUp,
+        animate: {
+          ...fadeInUp.animate,
+          transition: { ...fadeInUp.animate.transition, delay: 1 }
+        }
+      }}
         className="text"
         style={{
           display: 'flex',
@@ -74,8 +89,14 @@ export default function App() {
         }}
       >
         Sou desenvolvedor frontend
-      </h2>
-      
+      </motion.h2>
+      <motion.div variants={{
+        ...fadeInUp,
+        animate: {
+          ...fadeInUp.animate,
+          transition: { ...fadeInUp.animate.transition, delay: 1.5 }
+        }
+      }}>
       <Grid className="grid" css={{
                 display: 'flex',
                 alignItems: 'center',
@@ -145,7 +166,9 @@ export default function App() {
       </Button>
       </Link>
     </Grid>
+    </motion.div>
     </Container>
     </motion.div>
+  
   );
 }

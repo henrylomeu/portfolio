@@ -1,4 +1,13 @@
-
+.name {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding-bottom: 200px;
+  }
 @media (max-width: 390px) {
     .text1{
         align-items: center;
@@ -21,6 +30,5 @@
 @media (max-width: 390px) {
     .grid{
         display: flex;
-
     }
 }
