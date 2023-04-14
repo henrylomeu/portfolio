@@ -54,7 +54,6 @@ export default function App() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          paddingTop: '50px',
           fontWeight:'bold',
           /* color: '#80818C' */
          /*  '@xsMax': {
